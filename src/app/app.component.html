@@ -27,10 +27,10 @@
         <td class="cuerpo" mat-cell *matCellDef="let element"> {{element.symbol}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="fav">
+    <ng-container matColumnDef="favorito">
         <th class="cabezal" mat-header-cell *matHeaderCellDef>Elemento Favorito</th>
         <td class="cuerpo" mat-cell *matCellDef="let element">
-            <button class="boton" mat-button (click)="openDialog()">{{element.fav}}</button>
+            <button class="boton" mat-button (click)="openDialog()">{{element.favorito}}</button>
         </td>
     </ng-container>
 
