@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-
-/* .cabezal {
+.cabezal {
     background-color: chartreuse;
 }
 
@@ -16,4 +15,4 @@
 
 body {
     background-color: rgba(48, 44, 44, 0.993);
-} */
+}
