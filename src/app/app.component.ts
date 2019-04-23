@@ -30,29 +30,21 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 
 export class AppComponent {
-  name: string;
-  weight: number;
-  symbol: string;
-  favorito: string;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+  }
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'favorito'];
   dataSource = ELEMENT_DATA;
 
+
   openDialog(): void {
      const dialogRef = this.dialog.open(DialogDataExampleDialog, {
       data: {
-        name: this.name,
-        symbol: this.symbol,
-        weight: this.weight,
-        favorito: this.favorito
+        name: 'Hidrogeno',
+        symbol: 'H',
+        weight: 1.0079
       }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.favorito   = result;
     });
   }
 }
